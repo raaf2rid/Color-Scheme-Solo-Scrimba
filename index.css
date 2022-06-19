@@ -59,16 +59,14 @@ html, body {
 .div-4{
   background: #AAD1B6;
 }
-.div-5,.triad:hover{
+.div-5{
   background: #A626D3;
 }
 
 .color-div{
   display: flex;
-  text-align: center;
   background: #1F2937;
-  color: antiquewhite;
-  z-index: -2;
+  color: #D5D4D8;
   height: 100%;
 
 }
