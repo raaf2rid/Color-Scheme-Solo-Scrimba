@@ -139,7 +139,7 @@ select{
   color: #D5D4D8;
   border: none;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 0.7rem;
   letter-spacing: 0.5px;
   font-weight: 600;
   padding: 1em;
@@ -170,7 +170,7 @@ select{
   }
 
   select{
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
 
 }
