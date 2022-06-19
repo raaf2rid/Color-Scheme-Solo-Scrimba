@@ -1,0 +1,168 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #151227;
+}
+
+
+#container{
+  background: #1F2937;
+  max-width: 700px;
+  height: 80vh;
+  width: 90%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 10px solid #181313;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#app{
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+
+.selection-div{
+  margin: 0 1em;
+  padding: 2em 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.seed-color{
+  max-width: 70px;
+  width: 100%;
+  height: 60px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.div-1{
+  background: #F55A5A;
+}
+.div-2{
+  background: #2B283A;
+}
+.div-3{
+  background: #FBF3AB;
+}
+.div-4{
+  background: #AAD1B6;
+}
+.div-5,.triad:hover{
+  background: #A626D3;
+}
+
+.color-div{
+  display: flex;
+  text-align: center;
+  background: #1F2937;
+  color: antiquewhite;
+  z-index: -2;
+  height: 100%;
+
+}
+
+.color{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bar{
+    transition: 0.5s;
+    display: flex;
+    z-index: 25;
+    height: 100%;
+}
+
+.bar-scheme:hover{
+  transform: translate(0, 3em);
+}
+
+.copy:hover{
+  cursor: pointer;
+}
+
+.hex-code-div{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.hex-code,.copied{
+  font-size: 1rem;
+  position: absolute;
+  /* border: 1px solid white; */
+}
+
+p{
+  margin-top: 0.5em;
+}
+
+#clipboardTextarea,.hide-code{
+  display: none;
+}
+
+select{
+  font-family: 'Poppins', sans-serif;
+  background-color: #1F293A;
+  color: #D5D4D8;
+  border: none;
+  font-size: 1rem;
+  color: #D5D4D8;
+  border: 1px solid #D5D4D8;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  letter-spacing: 1px;
+  width: 40%;
+  padding: 0.7rem 1rem;
+  margin: 0 2em; 
+}
+
+.select-scheme{
+  display: none;
+}
+
+#scheme-btn{
+  font-family: 'Poppins', sans-serif;
+  background: rgba(204, 213, 227, 0.1);
+  color: #D5D4D8;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  padding: 1em;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#scheme-btn:hover{
+  background: rgba(204, 213, 227, 0.8);
+  color: #1F293A;
+}
+
+#scheme-btn:active{
+  background: rgba(204, 213, 227, 0.4);
+  color: #1F293A;
+  transform: scale3d(0.8, 0.8, 0.8);
+}
+
+
+@media (max-width:500px){
+  .bar-scheme{
+    transform: translate(0, 3em);
+  }
+}

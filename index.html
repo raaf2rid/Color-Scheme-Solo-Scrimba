@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Color Scheme</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="container">
+         <div id="app">
+          <div class="selection-div">
+            <input class="seed-color" id="seed-color-value" type="color" value="#F55A5A">
+                    <select id="color-scheme">
+                    <option class="select-scheme" value="">Select Scheme</option>
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>                  
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-complement</option>
+                    <option value="triad">Triad</option>
+                    <option value="quad">Quad</option>    
+                </select>               
+                <button id="scheme-btn">Get Color Scheme</button>
+          </div>
+          
+          <div id="color-div" class="color-div">
+                <div class="color">
+                <div class="bar div-1"></div>
+                </div>
+                <div class="color">
+
+                <div class="bar div-2"></div>
+                </div>
+                <div class="color">
+
+                <div class="bar div-3"></div>
+                </div>
+                <div class="color">
+
+                <div class="bar div-4"></div>
+                </div>
+                <div class="color">                  
+
+                <div class="bar div-5"></div>
+          </div>
+        </div>
+        </div>
+        <textarea name="clipboardTextarea" id="clipboardTextarea"></textarea>
+        <script src="index.js"></script>
+    </body>
+</html>
